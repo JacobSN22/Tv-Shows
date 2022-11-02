@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: #adb0b1;
 }
@@ -13,10 +18,12 @@ body {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  grid-gap: 20px;
 }
 
 .card {
+  padding-top: 4%;
+  padding-bottom: 4%;
+  margin: 5%;
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   background-color: #8c8d8f;
@@ -40,4 +47,80 @@ body {
 }
 .container p {
   color: rgb(21, 19, 19);
+}
+
+.wrapper {
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #343436;
+}
+
+nav {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+ul li a {
+  margin-left: 1.5em;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  position: relative;
+  font-size: 1.25em;
+}
+a::after {
+  content: "";
+  top: 80%;
+  border-bottom: 2px solid #f8e71c;
+  transition: all 0.35s;
+  position: absolute;
+  right: 50%;
+  left: 50%;
+}
+a:hover::after {
+  transition: all 0.35s;
+  right: 0;
+  left: 0;
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    height: auto;
+  }
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  ul {
+    width: 100%;
+    margin-bottom: 1em;
+    justify-content: space-between;
+  }
+  ul li a {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 768px) {
+  ul {
+    flex-direction: column;
+  }
+  ul li {
+    margin: 0.3em;
+    text-align: center;
+  }
+  ul li a {
+    margin-left: 0px;
+  }
 }/*# sourceMappingURL=main.css.map */
