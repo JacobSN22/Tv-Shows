@@ -49,15 +49,6 @@ body {
   color: rgb(21, 19, 19);
 }
 
-
-.on {
-  scale: 1.2;
-  display: inline;
-}
-
-.off {
-  display: none;
-  
 .wrapper {
   height: 65px;
   display: flex;
@@ -171,5 +162,12 @@ footer {
     margin-top: 10px;
     margin-bottom: 0px;
   }
+}
+.on {
+  scale: 1.2;
+  display: inline;
+}
 
+.off {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
