@@ -35,9 +35,42 @@ const createCards = (data) => {
     <h2 class="titel" > ${data.name}</h2>
     <img class="cardImg" src=${data.image.medium} alt=${data.name} >
     <p class="date" > ${data.schedule.days} ${data.schedule.time} </p>
+    <div class="off">
+    <p> ${data.summary} </p>
+    <p> ${data.runtime} </p>
+    <p> ${data.rating.average}</p>
+    <p> ${data.schedule.days} ${data.schedule.time} </p>
+    </div>
+
     </article>
     </figure>
     `
 }
+
+// const showDetails = document.getElementById("cards");
+// showDetails.addEventListener("click", showDetail)
+
+// function showDetail() {
+//     var figure = document.querySelector("figure")
+//     var div = document.querySelector("div")
+//     figure.classList.toggle("on")
+//     div.classList.toggle("off")
+// }    
+
+
+window.addEventListener('load', () => {
+    const figures = document.querySelectorAll("figure");
+    const divs = document.querySelectorAll("div");
+    console.log(figures);
+    figures.forEach(figure => {
+        figure.addEventListener('click', () => {
+            figure.classList.toggle("on");
+            divs.forEach(div => {
+            div.classList.toggle("off");
+            })
+        });    
+    });      
+  });
+
 
 fetchList();
