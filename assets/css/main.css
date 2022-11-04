@@ -31,6 +31,13 @@ body {
   border-radius: 5px 5px 5px 5px;
   width: 100%;
 }
+.card .on {
+  scale: 1.2;
+  display: inline;
+}
+.card .off {
+  display: none;
+}
 
 .container {
   padding: 2px 16px;

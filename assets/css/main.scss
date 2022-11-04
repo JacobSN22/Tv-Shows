@@ -27,6 +27,13 @@ body{
         border-radius: 5px 5px 5px 5px;
         width: 100%;
     }
+	.on {
+		scale: 1.2;
+		display: inline;
+	}
+	.off {
+		display: none;
+	}
 }
 .container {
 	padding: 2px 16px;
@@ -37,3 +44,7 @@ body{
         color: rgb(21, 19, 19);
     }
 }
+
+
+
+
