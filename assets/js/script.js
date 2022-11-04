@@ -68,8 +68,8 @@ window.addEventListener('load', () => {
             divs.forEach(div => {
             div.classList.toggle("off");
             })
-        });
-    });
+        });    
+    });      
   });
 
 
